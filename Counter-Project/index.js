@@ -10,5 +10,13 @@ document.querySelectorAll('.btn').forEach(function(button) {
 
     var count = document.querySelector(".number-container");
     count.innerHTML = counter;
+
+    if (counter < 0 ){
+      count.style.color = 'red'
+    } else if(counter == 0) {
+      count.style.color = "orange"
+    } else {
+      count.style.color = "green"
+    }
   })
 })
